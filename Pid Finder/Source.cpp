@@ -18,7 +18,7 @@ int GetPid(const char* ProcessName) {
 
 	BOOL result = Process32First(hSnapshot, &pe32);
 	if (!result) {
-		cout << "failed to retrieve about the first process in the system snapshot" << endl;
+		cout << "failed to retrieve informations about the first process in the system snapshot" << endl;
 		return GetLastError();
 	}
 
